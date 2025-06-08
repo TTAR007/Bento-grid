@@ -10,7 +10,7 @@
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 7%);
 
-    --paragraph-font-size: 1.125rem; 
+    --p-fs: 1.125rem; 
 }
 
 * {
