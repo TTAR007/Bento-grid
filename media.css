@@ -1,0 +1,166 @@
+@media screen and (min-width: 37.5rem) {
+    .bento__grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: start;
+
+        grid-template-areas: 
+        "one two"
+        "one four"
+        "three four"
+        "eight five"
+        "seven five"
+        "seven six"
+        ;
+    }
+
+    section {
+        align-self: stretch;
+    }
+
+    section:nth-of-type(1) {
+        grid-area: one;
+
+        justify-content: space-evenly;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: two;
+
+        img {
+            max-width: 24rem;
+        }
+    }
+
+    section:nth-of-type(3) {
+        grid-area: three;
+    }
+
+    section:nth-of-type(4) {
+        grid-area: four;
+    }
+
+    section:nth-of-type(5) {
+        grid-area: five;
+    }
+
+    section:nth-of-type(6) {
+        grid-area: six;
+    }
+
+    section:nth-of-type(7) {
+        grid-area: seven;
+    }
+
+    section:nth-of-type(8) {
+        grid-area: eight;
+    }
+}
+
+@media screen and (min-width: 62.5rem) {
+    .bento__grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas: 
+        "seven one one four"
+        "seven two three four"
+        "eight two three four"
+        "eight six five five"
+        ;
+    }
+
+    section:nth-of-type(1) {
+        padding: 4rem 2rem;
+    }
+
+    section:nth-of-type(2) {
+        overflow: hidden;
+
+        img {
+            width: 146%;
+        }
+    }
+
+    section:nth-of-type(3) {
+        overflow: hidden;
+        max-height: 16.9rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    section:nth-of-type(4) {
+        text-align: start;
+        align-items: start;
+        justify-content: center;
+        overflow: hidden;
+
+        padding-left: 2rem;
+
+        h2 {
+            font-weight: 500;
+        }
+
+        img {
+            max-width: none;
+            width: 170%;
+        }
+    }
+
+    section:nth-of-type(5) {
+        flex-direction: row;
+        padding: 1rem;
+        padding-bottom: 1.2rem;
+        text-align: start;
+
+        h2 {
+            font-weight: 500;
+        }
+
+        img {
+            width: 48%;
+            margin-bottom: 0;
+            margin-right: 0.5rem;
+        }
+    }
+
+    section:nth-of-type(6) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    section:nth-of-type(7) {
+        padding-top: 5.2rem;
+
+        h2 {
+            font-weight: 500;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    section:nth-of-type(8) {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-weight: 500;
+            margin: 0;
+            width: 90%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

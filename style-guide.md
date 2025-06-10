@@ -18,6 +18,7 @@ The designs were created to the following widths:
 - Yellow 500: hsl(39, 100%, 71%)
 
 - White: hsl(0, 0%, 100%)
+- Off-White: hsl(0, 0%, 96%)
 - Black: hsl(0, 0%, 7%)
 
 ## Typography
